@@ -1,6 +1,6 @@
 {
-  "name": "angular2-tinymce",
-  "version": "2.1.1",
+  "name": "bludata-angular-tinymce",
+  "version": "0.0.1",
   "description": "Angular component for TinyMCE MCE WYSIWYG editor , this is a copy with personal changes from Ledzz angular2-tinymce cause I needed ASAP this changes. I'll request the changes at his package and deprecate this one. Please use the original at https://github.com/Ledzz/angular2-tinymce/",
   "scripts": {
     "build": "ngc -p ./tsconfig.json && tsc -p ./tsconfig.json",
