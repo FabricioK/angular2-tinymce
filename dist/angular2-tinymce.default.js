@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var TinymceDefaultOptions = /** @class */ (function () {
+var TinymceDefaultOptions = (function () {
     function TinymceDefaultOptions() {
         this.plugins = [
             'link',
@@ -18,4 +18,3 @@ var TinymceDefaultOptions = /** @class */ (function () {
     return TinymceDefaultOptions;
 }());
 exports.TinymceDefaultOptions = TinymceDefaultOptions;
-//# sourceMappingURL=angular2-tinymce.default.js.map

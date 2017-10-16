@@ -11,7 +11,7 @@ var common_1 = require("@angular/common");
 var angular2_tinymce_component_1 = require("./angular2-tinymce.component");
 var forms_1 = require("@angular/forms");
 var angular2_tinymce_default_1 = require("./angular2-tinymce.default");
-var TinymceModule = /** @class */ (function () {
+var TinymceModule = (function () {
     function TinymceModule() {
     }
     TinymceModule_1 = TinymceModule;
@@ -46,4 +46,3 @@ var TinymceModule = /** @class */ (function () {
     var TinymceModule_1;
 }());
 exports.TinymceModule = TinymceModule;
-//# sourceMappingURL=angular2-tinymce.module.js.map

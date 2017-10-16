@@ -26,14 +26,13 @@ require("tinymce/plugins/lists/plugin.js");
 require("tinymce/plugins/code/plugin.js");
 var noop = function () {
 };
-var TinymceComponent = /** @class */ (function () {
+var TinymceComponent = (function () {
     function TinymceComponent(zone, options) {
         this.zone = zone;
         this.options = options;
         this.elementId = 'tiny-' + Math.random().toString(36).substring(2);
         this.onTouchedCallback = noop;
         this.onChangeCallback = noop;
-        //
     }
     TinymceComponent_1 = TinymceComponent;
     TinymceComponent.prototype.ngAfterViewInit = function () {
@@ -67,11 +66,9 @@ var TinymceComponent = /** @class */ (function () {
         tinymce.remove(this.editor);
     };
     Object.defineProperty(TinymceComponent.prototype, "value", {
-        // get accessor
         get: function () {
             return this.innerValue;
         },
-        // set accessor including call the onchange callback
         set: function (v) {
             var _this = this;
             if (v !== this.innerValue) {
@@ -85,7 +82,6 @@ var TinymceComponent = /** @class */ (function () {
         configurable: true
     });
     ;
-    // From ControlValueAccessor interface
     TinymceComponent.prototype.writeValue = function (value) {
         if (value !== this.innerValue) {
             this.innerValue = value;
@@ -124,4 +120,3 @@ var TinymceComponent = /** @class */ (function () {
     var TinymceComponent_1;
 }());
 exports.TinymceComponent = TinymceComponent;
-//# sourceMappingURL=angular2-tinymce.component.js.map

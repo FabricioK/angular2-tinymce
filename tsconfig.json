@@ -1,28 +1,37 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "declaration": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "lib": ["dom", "es6"],
+    "lib": [
+      "es6",
+      "dom"
+    ],
     "module": "commonjs",
-    "moduleResolution": "node",
-    "noEmitOnError": true,
-    "noImplicitAny": false,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "sourceMap": true,
     "target": "es5",
-    "inlineSources": false
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "noUnusedLocals": false,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node",
+      "jasmine"
+    ]
   },
   "files": [
-    "./src/index.ts"
+    "./src/**/*.ts"
   ],
-
   "angularCompilerOptions": {
     "genDir": "compiled",
     "debug": true,
-    "skipMetadataEmit" : false,
+    "skipMetadataEmit": false,
     "strictMetadataEmit": true
   }
 }
